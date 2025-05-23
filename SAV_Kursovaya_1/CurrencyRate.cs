@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace SAV_Kursovaya_1
 {
-    public class CurrencyRate
+    public class CurrencyRate // даты курсов - класс
     {
-        public DateTime Date { get; set; }
-        public decimal Rate { get; set; }
+        public string[] USD_Currency = new string[134]; // список для дат курса USD
+        public string[] EUR_Currency = new string[134]; // список для дат курса EUR
+        public string[] CNY_Currency = new string[134]; // список для дат курса CNY
 
-        public CurrencyRate(DateTime date, decimal rate)
-        {
-            Date = date;
-            Rate = rate;
+        public CurrencyRate(string USD_Currency, string EUR_Currency, string CNY_Currency)
+        { // тут тоже считывать txt файлы
+
         }
     }
 }
